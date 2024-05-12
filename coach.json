@@ -1,0 +1,7 @@
+{
+    "coach": [
+        {"id":1111,"nome": "Alice", "rank": 1, "rating": 5.0, "profilepicture": "path/to/alice.jpg", "calendly_url": "https://calendly.com/tonyhuaulme"},
+        {"id":2222,"nome": "Bob", "rank": 2, "rating": 4.5, "profilepicture": "path/to/bob.jpg", "calendly_url": "https://calendly.com/tonyhuaulme/30min"},
+        {"id":3333,"nome": "Charlie", "rank": 3, "rating": 4.0, "profilepicture": "path/to/charlie.jpg", "calendly_url": "https://calendly.com/tonyhuaulme"}
+    ]
+}
