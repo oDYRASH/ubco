@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read More Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="profile_description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pretium, velit vel efficitur cursus, dui metus consectetur metus, et fermentum ex arcu a lorem. Duis non risus eget urna sollicitudin luctus. Maecenas id vehicula leo. Integer id dui a velit hendrerit ultricies. Donec commodo, ex non facilisis ullamcorper, ipsum quam dictum libero, ut cursus purus nulla sed purus. Curabitur tincidunt velit in elit ullamcorper malesuada. Sed vehicula, dolor nec dictum convallis, orci nisl venenatis sapien, ut porttitor odio ligula sit amet arcu.
+    </div>
+    <span class="read-more" id="readMore">Read more</span>
+
+    <script src="script.js"></script>
+</body>
+<script>
+    document.getElementById('readMore').addEventListener('click', function() {
+        document.getElementById('profile_description').classList.add('expanded');
+        this.classList.add('hidden');
+    });
+</script>
+<style>
+    #profile_description {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; 
+    overflow: hidden;
+    position: relative;
+}
+
+#profile_description.expanded {
+    -webkit-line-clamp: none;
+    overflow: visible;
+}
+
+.read-more {
+    display: inline;
+    color: blue;
+    cursor: pointer;
+}
+
+.read-more.hidden {
+    display: none;
+}
+
+</style>
+</html>

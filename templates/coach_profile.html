@@ -7,10 +7,187 @@
     <link rel="icon" href="{{ url_for('static', filename='images/Logo50.png') }}" type="image/png">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+      <!-- GoogleFonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+      
     <title>LevelLink</title>
 </head>
 
-<body>
+<body id="background">
+    <!-- <div class="d-flex flex-row justify-content-center align-items-center" style="position: absolute; top: 15px; left: 15px;">
+        <span class="material-icons md-light">arrow_back</span>
+        <span>Retour</span>
+    </div> -->
+    <div id="content_container">
+        <div class="content_col d-flex flex-column justify-content-center align-items-center p-2">
+            <div class="d-flex flex-row mb-3" style="align-self: flex-start;">
+                <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3d/T1_Faker_2024_Split_1.png" width="100px" style="border-radius: 100px;">
+                <div class="d-flex flex-column ml-25px" style="justify-content: end; margin-left: 25px;">
+                    <h1 id="user_name">Faker</h1>
+                    <h5 class="challenger-gradient">CHALLENGER 1350 LP</h5>
+                </div>
+            </div>
+            <div style="position: relative;"  class="mb-4">
+                <span id="read-more-description" class="read-more">...<p style="color: gold;">Voir Plus</p></span>
+                <p id="profile_description">
+                    I am a professional League of Legends player with 5 years of experience. I have been playing since
+                    season 3 and have reached the highest rank in the game. I have been coaching for 2 years and have helped
+                    many players reach their desired rank. I am a professional League of Legends player with 5 years of
+                    experience. I have been playing since season 3 and have reached the highest rank in the game. I have
+                    been coaching for 2 years and have helped many players reach their desired rank.
+                </p>
+            </div>
+           
+            <div class="d-flex flex-row justify-content-between align-items-center w-100">
+                <span class="profile_interaction d-flex flex-row justify-content-center align-items-center"><span
+                        class="material-icons md-light">person_add</span>Follow</span>
+                <span class="profile_interaction d-flex flex-row justify-content-center align-items-center"><span
+                        class="material-icons">chat</span>Chat</span>
+                <span class="profile_interaction d-flex flex-row justify-content-center align-items-center"><span
+                        class="material-icons">share</span>Share</span>
+            </div>
+                
+            <span class="book_btn d-flex flex-row justify-content-center align-items-center w-100 mb-5">Reserver une session</span>
+                    
+            <span class="info_row d-flex w-100"><span class="material-icons md-light">euro</span>
+                    <p class="info_name">Prix</p>
+                    <p class="info_value">Gratuit - 55€</p>
+            </span>
+
+            <span class="info_row d-flex w-100"><span class="material-icons">event_available</span>
+                    <p class="info_name">Disponibilité</p>
+                    <p class="info_value" style="color: #94f094;">Dès ce soir</p>
+            </span>
+
+            <span class="info_row d-flex w-100"><span class="material-icons">star</span>
+                    <p class="info_name">Notes</p>
+                    <p class="info_value">4.8</p>
+            </span>
+
+            <span class="w-100 mt-3 mb-1"><hr></span>
+
+            <span class="info_row d-flex w-100"><span class="material-icons">people</span>
+                    <p class="info_name">Nombre d'élèves</p>
+                    <p class="info_value">153</p>
+            </span>
+
+            <span class="info_row d-flex w-100"><span class="material-icons">mic</span>
+                    <p class="info_name">Langues</p>
+                    <p class="info_value">Anglais, Français</p>
+            </span>
+
+            <span class="info_row d-flex w-100"><span class="material-icons">videogame_asset</span>
+                    <p class="info_name">Jeux</p>
+                    <p class="info_value">League of Legends</p>
+            </span>
+
+            <span class="info_row d-flex w-100"><span class="material-icons">phone</span>
+                    <p class="info_name">Communication</p>
+                    <p class="info_value">Discord</p>
+            </span>
+
+        </div>
+        <div class="content_col d-flex flex-column justify-content-center align-items-center p-2">
+            <div class="card mb-3" style="background: #14141a;">
+                <div class="card-body">
+                    <p class="card-text review_text">
+                        <!-- avis d'un joueur coché par le profil du coache -->
+                        "Kennys est un coach très pédagogue et à l'écoute. Il m'a permis de progresser rapidement et de monter de division en quelques jours. Je recommande vivement !" 
+                    </p>
+                </div>
+                <div class="card-footer bg-transparent">60€ Reserver ></div>
+            </div>
+            <h4 style="color: whitesmoke; align-self: flex-start;" class="mt-4 mb-3">Sessions</h4>
+            <div class="card mb-3  w-100" style="background: #14141a;">
+                <div class="card-header bg-transparent d-flex flex-direction-row align-items-center"><img style="width: 40px; border-radius: 25px; margin-right:15px" src="https://brand.riotgames.com/static/a91000434ed683358004b85c95d43ce0/8a20a/lol-logo.png" alt=""><p>League of Legends</p></div>
+                <div class="card-body">
+                    <h5 class="card-title">Live Coaching</h5>
+                    <p class="card-text">1h - Tips & Trick</p>
+                </div>
+                <div class="card-footer bg-transparent d-flex justify-content-between"><span class="session_price">60€ / h</span><span class="book_session"><a href="" class="zzzz" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/tonyhuaulme/30min'});return false;">Resrever ></a></span></div>
+            </div>
+
+            <div class="card mb-3  w-100" style="background: #14141a;">
+                <div class="card-header bg-transparent d-flex flex-direction-row align-items-center"><img style="width: 40px; border-radius: 25px; margin-right:15px" src="https://brand.riotgames.com/static/a91000434ed683358004b85c95d43ce0/8a20a/lol-logo.png" alt=""><p>League of Legends</p></div>
+                <div class="card-body">
+                    <h5 class="card-title">Game Review</h5>
+                    <p class="card-text">Analyse complete de la partie</p>
+                </div>
+                <div class="card-footer bg-transparent d-flex justify-content-between"><span class="session_price">20 €</span><span class="book_session"><a href="" class="zzzz" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/tonyhuaulme/30min'});return false;">Resrever ></a></span></div>
+            </div>
+
+            
+        </div>
+        <div class="content_col d-flex flex-column justify-content-center align-items-center p-2">
+            <img class="media" src="https://eloking.com/storage/blog-images/q8HsU6Jo5J27X5OusDUMN26lb68aSHnLieFF3KZb.jpg" alt="">
+
+            
+            <!-- <div class="d-flex flex-row">
+                <p id="catching_phrase" class="card">I'm not gifted, I'm just very very hard working.</p>
+                <div id="success" class="card">
+                    <div>
+                        <span>HEURES DE COACHING</span>
+                        <span>153h</span>
+                    </div>
+                    <div>
+                        <span>NOTES DES ELEVES</span>
+                        <span>4.8/5</span>
+                    </div>
+                </div>
+            </div> -->
+            <iframe class="mt-5" style="width: 100%; aspect-ratio: 1.77;" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1"></iframe>
+        </div>
+
+    
+        <!-- <div id="modal">
+            <div id="modal-content">
+                <h2>Modal Title</h2>
+                <p>This is the modal content.</p>
+                <button id="closeModal">Fermer
+                    
+                </button>
+            </div>
+        </div> -->
+    </div>
+
+    <!-- Calendly badge widget begin -->
+<!-- <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/tonyhuaulme/30min?hide_gdpr_banner=1&background_color=1a1a1a&text_color=c1c1c1&primary_color=007eff', text: 'Reserver >', color: '#0069ff', textColor: '#ffffff', branding: undefined }); }</script> -->
+<!-- Calendly badge widget end -->
+    <!-- Calendly link widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<!-- Calendly link widget end -->
+    <!-- <div class="calendly-inline-widget" data-url={{"https://calendly.com/tonyhuaulme/30min" + "?hide_event_type_details=1&hide_gdpr_banner=1"}} style="min-width:320px;height:700px;"></div> -->
+
+    <script>
+        const profileDescription = document.getElementById('profile_description');
+        const readMoreProfileDescription = document.getElementById('read-more-description');
+
+        readMoreProfileDescription.addEventListener('click', function() {
+            profileDescription.classList.toggle('expanded');
+        });
+    </script>
+    <!-- <script>
+        document.getElementById('read-more-description').addEventListener('click', function() {
+            document.body.classList.add('show-modal');
+        });
+
+        document.getElementById('closeModal').addEventListener('click', function() {
+            document.body.classList.remove('show-modal');
+        });
+
+        document.getElementById('modal').addEventListener('click', function(event) {
+            if (event.target === this) {
+                document.body.classList.remove('show-modal');
+            }
+        });
+    </script> -->
     <!-- <div id="banner">
         <div id="banner-content">
             <h1>Latiniumart</h1>
@@ -21,13 +198,245 @@
         </div> -->
     <!-- </div> -->
     <!-- Calendly inline widget begin -->
-    <!-- <div class="calendly-inline-widget" data-url={{profile.calendly_url + "?hide_event_type_details=1&hide_gdpr_banner=1"}} style="min-width:320px;height:700px;"></div>
-    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script> -->
-    <!-- Calendly inline widget end -->
+    <!-- <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script> -->
 </body>
 <style>
-    body{
-        background-color: #021327;
-        background-image: url("{{ url_for('static', filename='images/j.png') }}");
+#background {
+    transition: filter 0.3s;
+}
+
+#modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 500px;
+    width: 80%;
+}
+
+.show-modal #modal {
+    display: flex;
+}
+
+.show-modal #background {
+    filter: blur(5px);
+}
+
+
+
+
+
+
+
+
+
+
+    p{
+        margin: 0!important;
     }
+
+    body {
+        user-select: none;
+        font-family: "Noto Sans JP", sans-serif;
+
+        background: #0e0e11;
+        color: #9f9fad;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 9rem 1rem 9rem;
+        font-size:12px !important;
+    }
+
+    .read-more {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding-right: 9px;
+        background: #0e0e11;
+        cursor: pointer;
+    }
+
+    #catching_phrase, #success {
+        padding: 16px;
+        background: #14141a;
+    }
+
+    .review_text {
+        font-weight: 500;
+        /* background: -webkit-linear-gradient(#eee, #d81717); */
+        background: -moz-linear-gradient(150deg, rgba(249, 207, 212, 1) 0%, rgba(255, 230, 184, 1) 51%, rgba(227, 238, 230, 1) 100%);
+        background: -webkit-linear-gradient(150deg, rgba(249, 207, 212, 1) 0%, rgba(255, 230, 184, 1) 51%, rgba(227, 238, 230, 1) 100%);
+        background: linear-gradient(150deg, rgb(239 195 200) 0%, rgb(230 202 150) 51%, rgb(177 252 197) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .card-title {
+        color: white;
+        font-size: 16px;
+    }
+
+    .session_price{
+        color: white;
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    .book_session, .zzzz{
+        color: #f0bc2e !important;
+        cursor: pointer !important;
+        margin-top: 5px !important;
+        font-size: 14px !important;
+        font-weight: 500 !important;
+        text-decoration: none !important;
+    }
+
+    #user_name{font-weight: 700 !important;
+    color: white;}
+
+    #profile_description {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        transition: max-height 0.5s;
+
+        max-height: 4.5em; /* 3 lines * 1.5em line height */
+    }
+
+    #profile_description.expanded {
+        overflow: none;
+        display: block;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: none;
+        max-height: 1000px; /* Set to a large value for smooth expansion */
+    }
+
+    .card-title{
+        color: white;
+    }
+
+    .info_value {
+        margin-left: auto !important;
+        color: #c0c0d1;
+        font-weight: 500;
+    }
+
+    .info_row{
+        margin-top: 6px;
+        font-size: 14px;
+        align-items: center;
+    }
+
+    .book_btn {
+        background: #1e1e27;
+        padding: 8px;
+        border-radius: 8px;
+        color: white;
+        cursor: pointer;
+        margin-top: 15px;
+        font-size: 16px;
+        transition: all ease-in-out 0.3s;
+    }
+
+    .book_btn:hover {
+        background: #292938;
+    }
+
+    .profile_interaction {
+        border: solid #888888 1px;
+        padding: 4px;
+        width: 32%;
+        border-radius: 8px;
+        color: white;
+        font-weight: 500;
+        cursor: pointer;
+        height: 34px;
+        transition: all ease-in-out 0.3s;
+    }
+
+    .profile_interaction:hover {
+        box-shadow: white 0px 1px 1px;
+    }
+
+    .material-icons {
+        margin-right: 7px;
+        font-size: 14px;
+    }
+
+    .media {
+        width: -webkit-fill-available;
+    }
+
+    #content_container {
+        display: flex;
+        width: fit-content;
+        background: #0e0e11;
+    }
+
+    .content_col {
+        background: #0e0e11;
+        width: 33%;
+        height: fit-content;
+    }
+
+
+    .gold-gradient {
+        background-image: linear-gradient(to right, #795121 0, #9e7646 22%, #b0834f 45%, #d8ac77 50%, #fdeec1 55%, #765022 78%, #704a1c 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .platinum-gradient {
+        background-image: linear-gradient(to right, #43dee1 0, #1f6876 22%, #338a93 45%, #45e4e7 50%, #94e7ee 55%, #2fa9ab 78%, #45e4e7 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .emerald-gradient {
+        background-image: linear-gradient(to right, #43e16b 0, #1f765c 22%, #33936f 45%, #45e77e 50%, #94eeba 55%, #2fab6a 78%, #45e770 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .diamond-gradient {
+        background-image: linear-gradient(to right, #5f9fc5 0, #5172c6 22%, #1f5de8 45%, #695ca9 50%, #3aa7e0 55%, #6447cd 78%, #3303ba 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .master-gradient {
+        background-image: linear-gradient(to right, #8e5fc5 0, #8551c6 22%, #891fe8 45%, #8f5ca9 50%, #ab3ae0 55%, #9b47cd 78%, #6c03ba 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .grandmaster-gradient {
+        background-image: linear-gradient(to right, #ff6b47 0%, #ff582a 22%, #ff3b00 45%, #ff6a00 50%, #b67713 55%, #ff3b00 78%, #d82900 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .challenger-gradient {
+        background-image: linear-gradient(to right, #c8a860 0%, #d9b776 22%, #66b8e8 45%, #339acd 50%, #52b2db 55%, #c8a860 78%, #a3824c 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .rank-text {
+            font-size: 2em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
 </style>
